@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+
+  accounts:
+    image: bbank-project/account:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - eazybank-network
+
+  loans:
+    image: bbank-project/loans:latest
+    ports:
+      - "8090:8090"
+    networks:
+      - eazybank-network
+
+  cards:
+    image: bbank-project/cards:latest
+    ports:
+      - "9000:9000"
+    networks:
+      - bbank-network
+
+networks:
+  bbank-network:
