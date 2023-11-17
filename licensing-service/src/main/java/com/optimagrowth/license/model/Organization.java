@@ -1,6 +1,6 @@
 package com.optimagrowth.license.model;
 
-import javax.persistence.Id;
+import jakarta.persistence.Id;
 
 import org.springframework.data.redis.core.RedisHash;
 import org.springframework.hateoas.RepresentationModel;
